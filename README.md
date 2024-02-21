@@ -9,5 +9,5 @@
 
 Descripcion del proyecto dada por Samuel
 
-Descripción del proyecto dada por Pablo
+
 
