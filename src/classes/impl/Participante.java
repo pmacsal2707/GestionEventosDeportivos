@@ -1,5 +1,8 @@
 package classes.impl;
 
+import jdk.jshell.SourceCodeAnalysis;
+import utils.gestionEventosDeportivosUtils;
+
 public class Participante {
 
     // Atributos
@@ -10,7 +13,7 @@ public class Participante {
 
     // Constructor
     public Participante(String dni, String nombre, String apellidos, int edad) {
-        this.dni = dni;
+        setDni(dni);
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
@@ -48,7 +51,12 @@ public class Participante {
     }
 
     public void setDni(String dni) {
-        this.dni = dni;
+        if (gestionEventosDeportivosUtils.checkDni(dni)) { // Comprobamos que el DNI sea correcto
+            this.dni = dni;
+        } else { // En el caso de que no lo sea mostramos el mensaje de error
+            System.out.println("El DNI proporcionado no es válido.");
+        }
+
     }
 
     public String getNombre() {
