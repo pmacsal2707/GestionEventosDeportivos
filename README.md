@@ -6,4 +6,8 @@
 ## Duo dinámico
 
 ### **Descripción del proyecto**
-Descripción del proyecto dada por Pablo
+
+Descripcion del proyecto dada por Samuel
+
+
+
