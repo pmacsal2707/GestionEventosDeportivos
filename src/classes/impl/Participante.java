@@ -1,3 +1,5 @@
+package classes.impl;
+
 public class Participante {
 
     // Atributos
@@ -17,7 +19,7 @@ public class Participante {
     // Métodos
     @Override
     public String toString() {
-        return "Participante" +
+        return "classes.impl.Participante" +
                 "dni='" + dni + "\n"+
                 ", nombre='" + nombre + "\n"+
                 ", apellidos='" + apellidos + "\n"+

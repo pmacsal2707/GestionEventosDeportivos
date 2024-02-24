@@ -1,3 +1,7 @@
+package classes.impl;
+
+import classes.impl.Participante;
+
 import java.time.Duration;
 
 public class ParticipanteCarrera extends Participante {
@@ -14,7 +18,7 @@ public class ParticipanteCarrera extends Participante {
     // Métodos
     @Override
     public String toString() {
-        return "ParticipanteCarrera" + "\n" +
+        return "classes.impl.ParticipanteCarrera" + "\n" +
                 "dni: " + getDni() + "\n" +
                 ", nombre: " + getNombre() + "\n" +
                 ", apellidos: " + getApellidos() + "\n" +
