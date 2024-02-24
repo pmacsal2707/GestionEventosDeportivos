@@ -17,13 +17,11 @@ public class Participante {
     // Métodos
     @Override
     public String toString() {
-
         return "Participante" +
                 "dni='" + dni + "\n"+
                 ", nombre='" + nombre + "\n"+
                 ", apellidos='" + apellidos + "\n"+
                 ", edad=" + edad;
-
     }
 
     @Override
