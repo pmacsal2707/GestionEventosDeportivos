@@ -2,9 +2,11 @@ package classes.api;
 
 import classes.impl.Participante;
 
+import java.util.ArrayList;
+
 public interface Ganador {
 
     // Métodos
-    Participante obtenerGanador();
+    ArrayList<Participante> obtenerGanador();
 
 }

@@ -35,7 +35,7 @@ public abstract class EventoDeportivo implements Ganador {
         }
         return sePuedeInscribir;
     }
-    public abstract Participante obtenerGanador();
+    public abstract ArrayList<Participante> obtenerGanador();
 
     // Getters y Setters
     public String getNombre() {
