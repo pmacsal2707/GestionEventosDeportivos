@@ -11,13 +11,14 @@ public abstract class EventoDeportivo implements Ganador {
     protected String nombre;
     protected LocalDateTime fecha;
     protected String lugar;
-    protected ArrayList<Participante> participantes = new ArrayList<>();
+    protected ArrayList<Participante> participantes;
 
     // Constructor
-    public EventoDeportivo (String nombre, LocalDateTime fecha, String lugar) {
-        setNombre(nombre);
-        setLugar(lugar);
-        setFecha(fecha);
+    public EventoDeportivo(String nombre, LocalDateTime fecha, String lugar) {
+        this.nombre = nombre;
+        this.fecha = fecha;
+        this.lugar = lugar;
+        this.participantes = new ArrayList<>();
     }
 
     // Metodos
@@ -35,6 +36,12 @@ public abstract class EventoDeportivo implements Ganador {
         }
         return sePuedeInscribir;
     }
+
+    // Método para acceder a la lista de participantes
+    public ArrayList<Participante> getParticipantes() {
+        return participantes;
+    }
+
     public abstract ArrayList<Participante> obtenerGanador();
 
     // Getters y Setters

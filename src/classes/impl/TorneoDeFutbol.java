@@ -16,7 +16,7 @@ public class TorneoDeFutbol extends EventoDeportivo{
 
     // Metodo obtenerGanador
     @Override
-    public ArrayList obtenerGanador() {
+    public ArrayList<Participante> obtenerGanador() {
         return null;
     }
 
