@@ -11,7 +11,7 @@ public class Carrera extends EventoDeportivo{
     // Constructor
     public Carrera(String nombre, LocalDateTime fecha, String lugar, double distancia) {
         super(nombre, fecha, lugar);
-        this.distancia = distancia;
+        setDistancia(distancia);
     }
 
     // Métodos
@@ -57,6 +57,10 @@ public class Carrera extends EventoDeportivo{
     }
 
     public void setDistancia(double distancia) {
-        this.distancia = distancia;
+        if (distancia <= 0) {
+            System.out.println("La distancia debe ser un valor positivo");
+        } else {
+            this.distancia = distancia;
+        }
     }
 }

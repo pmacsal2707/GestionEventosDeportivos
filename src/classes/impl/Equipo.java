@@ -3,7 +3,7 @@ package classes.impl;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Equipo implements Comparable<Equipo>{
+public class Equipo implements Comparable<Equipo> {
 
     private String nombre;
     private ArrayList<Participante> jugadores;
@@ -96,5 +96,13 @@ public class Equipo implements Comparable<Equipo>{
 
     public void setPuntos(int puntos) {
         this.puntos = puntos;
+    }
+
+    public ArrayList<Participante> getJugadores() {
+        return jugadores;
+    }
+
+    public void setJugadores(ArrayList<Participante> jugadores) {
+        this.jugadores = jugadores;
     }
 }
