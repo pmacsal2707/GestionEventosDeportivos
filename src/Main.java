@@ -24,6 +24,7 @@ public class Main {
         // Ahora los inscribimos
         maratonBoston.inscribirParticipante(participanteC1);
         maratonBoston.inscribirParticipante(participanteC2);
+        maratonBoston.inscribirParticipante(usainBolt);
 
         // 3º Inscribir equipos en torneo de fútbol
         Equipo equipo1 = new Equipo("Equipo A");
@@ -47,18 +48,35 @@ public class Main {
         } else {
             System.out.println("No se pudo eliminar el jugador del equipo.");
         }
+        if (equipo1.eliminarJugador(cristiano)) {
+            System.out.println("Jugador eliminado del equipo.");
+        } else {
+            System.out.println("No se pudo eliminar el jugador del equipo.");
+        }
+        if (equipo1.eliminarJugador(elPanda)) {
+            System.out.println("Jugador eliminado del equipo.");
+        } else {
+            System.out.println("No se pudo eliminar el jugador del equipo.");
+        }
 
         // Mostrar información
-        System.out.println("Información de la carrera:\n" + maratonBoston.toString());
+        System.out.println("Información de la maratoon:\n" + maratonBoston.toString());
         System.out.println("Información del torneo de fútbol:\n" + torneoFutbol.toString());
+        System.out.println("Información de la carrera:\n" + carrera.toString());
+        System.out.println("Información del torneo de furbito:\n" + furbito.toString());
 
-        equipo1.toString();
-        equipo2.toString();
+        System.out.println("Información del equipo 1: " + equipo1.toString());
+        System.out.println("Información del equipo 2: " + equipo2.toString());
 
-        participanteC1.toString();
-        participanteC2.toString();
-        participante1.toString();
-        participante2.toString();
+        System.out.println("Información del participante 1: " + participante1.toString());
+        System.out.println("Información del participante 2: " + participante2.toString());
+        System.out.println("Información del Cristiano: " + elPanda.toString());
+        System.out.println("Información del ElPanda: " + cristiano.toString());
+        System.out.println("Información del corredor 1: " + participanteC1.toString());
+        System.out.println("Información del corredor 2: " + participanteC2.toString());
+        System.out.println("Información del Usain: " + usainBolt.toString());
+
+
 
         // Mostrar lista de equipos ordenada por puntuación
         Collections.sort(torneoFutbol.getEquipos());
