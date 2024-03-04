@@ -14,7 +14,7 @@ para finalmente darle los valores a los atributos de EventoDeportivo:
 Tras esto vuelve a la clase carrera para comprobar si el atributo distancia de la clase Carrera es negativo o no, en caso de que no lo sea 
 le dará el valor que se le ha pasado.
 
-![ComprobaciónAtrDistancia.png](capturas%2FComprobaci%F3nAtrDistancia.png)
+![ComprobaciónAtrDistancia.png](capturas%2FComprobaciónAtrDistancia.png)
 
 Y con esto terminaría la de instanciar la clase carrera.
 
