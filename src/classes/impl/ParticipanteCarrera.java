@@ -4,6 +4,9 @@ import classes.impl.Participante;
 
 import java.time.Duration;
 
+/**
+ * Clase ParticipanteCarrera que extiende de Participante y representa a un participante en una carrera
+ */
 public class ParticipanteCarrera extends Participante {
 
     // Atributos
@@ -16,6 +19,10 @@ public class ParticipanteCarrera extends Participante {
     }
 
     // Métodos
+    /**
+     *  Método toString para mostrar los datos de un participante de una carrera
+     * @return Cadena que representa al participante de la carrera
+     */
     @Override
     public String toString() {
         return "classes.impl.ParticipanteCarrera" + "\n" +
