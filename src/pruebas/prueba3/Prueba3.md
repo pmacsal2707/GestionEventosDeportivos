@@ -18,3 +18,14 @@ mostrando además, el mensaje correspondiente:
 
 Como ya hemos visto que el método inscribirEquipo funciona correctamente y se añaden de manera correcta al ArrayList, podemos dar la tercera y 
 última prueba como terminada.
+
+Algo interesante es ver como se van añadiendo los equipos a las competiciones que hayamos seleccionado. En este caso podemos ver como los dos
+quipos se guardan en la competición "TorneoFutbol":
+
+![EquiposEnTorneo.png](captura%2FEquiposEnTorneo.png)
+
+Primero el equipo A
+
+![EquipoB.png](captura%2FEquipoB.png)
+
+Y luego el equipo B
