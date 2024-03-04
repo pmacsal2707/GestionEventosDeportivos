@@ -20,7 +20,7 @@ public class Main {
         // Primero creamos 2 participantes
         ParticipanteCarrera participanteC1 = new ParticipanteCarrera("12345678A", "John", "Doe", 30, 14400.0); // 4 horas
         ParticipanteCarrera participanteC2 = new ParticipanteCarrera("23456789B", "Jane", "Smith", 25, 12600.0); // 3.5 horas
-        ParticipanteCarrera usainBolt = new ParticipanteCarrera("34567890-C", "Usain", "Bolt", 37, 12600.0);
+        ParticipanteCarrera usainBolt = new ParticipanteCarrera("34567890C", "Usain", "Bolt", 37, 12600.0);
         // Ahora los inscribimos
         maratonBoston.inscribirParticipante(participanteC1);
         maratonBoston.inscribirParticipante(participanteC2);
@@ -35,8 +35,8 @@ public class Main {
         // 4º Añadir y eliminar jugadores de equipos
         Participante participante1 = new Participante("12345678A", "Francisco", "Hernandez", 26);
         Participante participante2 = new Participante("23456789B", "Pedro", "Perez", 18);
-        Participante cristiano = new Participante("12345678-A", "Cristiano", "Ronaldo dos Santos Aveiro", 39);
-        Participante elPanda = new Participante("23456789-B", "Borja", "Iglesias Quintás", 31);
+        Participante cristiano = new Participante("12345678A", "Cristiano", "Ronaldo dos Santos Aveiro", 39);
+        Participante elPanda = new Participante("23456789B", "Borja", "Iglesias Quintás", 31);
 
         if (equipo1.anadirJugador(participante1)) {
             System.out.println("Jugador añadido al equipo.");
