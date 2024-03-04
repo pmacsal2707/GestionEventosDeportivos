@@ -7,10 +7,10 @@ import java.time.Duration;
 public class ParticipanteCarrera extends Participante {
 
     // Atributos
-    private Duration tiempo; // Usaremos el paquete 'java.time' porque nos permite manejar fechas, horas, períodos y duraciones de tiempo
+    private double tiempo; // Usaremos el paquete 'java.time' porque nos permite manejar fechas, horas, períodos y duraciones de tiempo
 
     // Constructor
-    public ParticipanteCarrera(String dni, String nombre, String apellidos, int edad, Duration tiempo) {
+    public ParticipanteCarrera(String dni, String nombre, String apellidos, int edad, double tiempo) {
         super(dni, nombre, apellidos, edad);
         this.tiempo = tiempo;
     }
@@ -23,15 +23,15 @@ public class ParticipanteCarrera extends Participante {
                 ", nombre: " + getNombre() + "\n" +
                 ", apellidos: " + getApellidos() + "\n" +
                 ", edad: " + getEdad() + "\n" +
-                ", tiempo: " + tiempo.toMinutes() + " minutos";
+                ", tiempo: " + getTiempo() + " minutos";
     }
 
     // Getters and setters
-    public Duration getTiempo() {
+    public double getTiempo() {
         return tiempo;
     }
 
-    public void setTiempo(Duration tiempo) {
+    public void setTiempo(double tiempo) {
         this.tiempo = tiempo;
     }
 }

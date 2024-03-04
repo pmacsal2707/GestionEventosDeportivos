@@ -36,7 +36,7 @@ public class Carrera extends EventoDeportivo{
                 ParticipanteCarrera participanteCarrera = (ParticipanteCarrera) participante;
 
                 // Obtenemos el tiempo del participanteCarrera
-                double tiempoParticipante = participanteCarrera.getTiempo().toSeconds();
+                double tiempoParticipante = participanteCarrera.getTiempo();
                 if (tiempoParticipante < menorTiempo) { // Si el tiempo es menor al menor tiempo encontrado hasta ahora actualizamos el menor tiempo
                     menorTiempo = tiempoParticipante;
                     ganador = participante; // El ganador es el que al final del bucle tiene menor tiempo
