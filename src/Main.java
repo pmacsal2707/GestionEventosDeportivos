@@ -38,22 +38,22 @@ public class Main {
         Participante cristiano = new Participante("12345678A", "Cristiano", "Ronaldo dos Santos Aveiro", 39);
         Participante elPanda = new Participante("23456789B", "Borja", "Iglesias Quintás", 31);
 
-        if (equipo1.anadirJugador(participante1)) {
+        if (equipo1.anadirJugador(participante1)) { // Añadimos el jugador
             System.out.println("Jugador añadido al equipo.");
         } else {
             System.out.println("No se pudo añadir el jugador al equipo.");
         }
-        if (equipo1.eliminarJugador(participante2)) {
+        if (equipo1.eliminarJugador(participante2)) { // Añadimos el jugador
             System.out.println("Jugador eliminado del equipo.");
         } else {
             System.out.println("No se pudo eliminar el jugador del equipo.");
         }
-        if (equipo1.eliminarJugador(cristiano)) {
+        if (equipo1.eliminarJugador(cristiano)) { // Añadimos el jugador
             System.out.println("Jugador eliminado del equipo.");
         } else {
             System.out.println("No se pudo eliminar el jugador del equipo.");
         }
-        if (equipo1.eliminarJugador(elPanda)) {
+        if (equipo1.eliminarJugador(elPanda)) { // Añadimos el jugador
             System.out.println("Jugador eliminado del equipo.");
         } else {
             System.out.println("No se pudo eliminar el jugador del equipo.");
@@ -79,8 +79,8 @@ public class Main {
 
 
         // Mostrar lista de equipos ordenada por puntuación
-        Collections.sort(torneoFutbol.getEquipos());
-        System.out.println("Lista de equipos ordenada por puntuación: " + torneoFutbol.getEquipos());
+        Collections.sort(torneoFutbol.getEquipos()); // Ordena la lista de equipos del torneo de fútbol por puntos acumulados
+        System.out.println("Lista de equipos ordenada por puntuación: " + torneoFutbol.getEquipos()); // Muestra por consola la lista de equipos ordenada por puntuación
     }
 
 }

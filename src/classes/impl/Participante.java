@@ -13,7 +13,7 @@ public class Participante {
 
     // Constructor
     public Participante(String dni, String nombre, String apellidos, int edad) {
-        setDni(dni);
+        this.dni = dni;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
